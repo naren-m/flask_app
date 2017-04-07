@@ -18,7 +18,9 @@ conda env create -f environment.yml
 python app.py
 ```
 
-```output
+Output
+
+```zsh
  * Running on http://0.0.0.0:5000/
  * Restarting with reloader
 ```
@@ -26,6 +28,7 @@ python app.py
 You can see the app working at [http://localhost:5000/](http://localhost:5000/)
 
 ## Issues
+
 After closing the web application you have to kill the process by grepping for 'python app.py' and kill it
 
 ```zsh
