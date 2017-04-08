@@ -24,11 +24,6 @@ def video_feed():
     return Response(gen(imageObject),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/display')
-def display():
-    v = Video()
-    v.display_video()
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, threaded=True)
     # display()
