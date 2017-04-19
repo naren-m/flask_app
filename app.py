@@ -1,7 +1,6 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, jsonify
 from camera import Video
 
-from image_display import ImageDisplay
 
 app = Flask(__name__)
 
@@ -14,7 +13,8 @@ def hello_world():
 def gen(camera):
     """Video streaming generator function."""
     while True:
-        frame = camera.get_frame()
+        frame, image = camera.get_frame()
+        camera.save_image(image)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 

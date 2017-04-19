@@ -38,9 +38,17 @@ username           554  12.0  0.4  2767156  64300 s002  S     7:22PM   1:26.78 /
 kill -9 554
 ```
 
+## TODO
+
+- [ ] [Test Camera with Rest Interface](http://blog.cudmore.io/post/2015/12/06/camera-with-a-rest-interface/)
 
 ## Reference
 
+- [Camera with Rest Interface](http://blog.cudmore.io/post/2015/12/06/camera-with-a-rest-interface/)
 - [Conda environment tutorial](http://www.naren.me/2017-02-28-Using-Anaconda-for-creating-virtual-environment/)
 - [Conda docs](https://conda.io/docs/using/envs.html)
 - [Flask video streaming](https://github.com/miguelgrinberg/flask-video-streaming)
+- [REST API Http Requests for Humans with Flask](http://www.bogotobogo.com/python/python-REST-API-Http-Requests-for-Humans-with-Flask.php)
+- [Building beautiful REST APIs using Flask, Swagger UI and Flask-RESTPlus](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
+- [Flask-Restful_S3_File_Upload.py](https://gist.github.com/RishabhVerma/7228939)
+- [](http://code.runnable.com/UiPcaBXaxGNYAAAL/how-to-upload-a-file-to-the-server-in-flask-for-python)

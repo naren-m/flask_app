@@ -3,6 +3,8 @@ Capture and stream video
 """
 from __future__ import print_function
 import cv2
+import numpy as np
+
 
 
 class Video(object):
@@ -15,6 +17,7 @@ class Video(object):
         if source is path to video file, captures video from source file
         """
         self.video = cv2.VideoCapture(source)
+        self.shown = False  
 
     def __del__(self):
         self.video.release()
@@ -32,8 +35,25 @@ class Video(object):
         # video stream.
         if not success:
             raise Exception
+        
+        return self._convet_to_byte_stream(image), image
+    
+    def _convet_to_byte_stream(self, image):
         ret, jpeg = cv2.imencode('.jpg', image)
+        if not ret:
+            raise Exception
+        
         return jpeg.tobytes()
+
+ 
+    def save_image(self, image):
+        """
+        Save the frame(byte stream) to a specified location
+        """
+
+        # CV2
+        cv2.imwrite("newimage.jpg", image)
+        
 
     def display_video(self):
         """
