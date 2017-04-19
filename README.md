@@ -51,4 +51,5 @@ kill -9 554
 - [REST API Http Requests for Humans with Flask](http://www.bogotobogo.com/python/python-REST-API-Http-Requests-for-Humans-with-Flask.php)
 - [Building beautiful REST APIs using Flask, Swagger UI and Flask-RESTPlus](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
 - [Flask-Restful_S3_File_Upload.py](https://gist.github.com/RishabhVerma/7228939)
-- [](http://code.runnable.com/UiPcaBXaxGNYAAAL/how-to-upload-a-file-to-the-server-in-flask-for-python)
+- [How-to-upload-a-file-to-the-server-in-flask-for-python](http://code.runnable.com/UiPcaBXaxGNYAAAL/how-to-upload-a-file-to-the-server-in-flask-for-python)
+- [flask-uploads blog](http://www.patricksoftwareblog.com/tag/flask-uploads/)
